@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import CreateHouse from './components/CreateHouse';
+import Houses from './components/Houses';
 
 function App() {
+  const url = "https://ancient-taiga-31359.herokuapp.com/api/houses"
+  // const url = "#"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-header">
+      <Houses url={url} />
+      <CreateHouse url={url}/>
     </div>
   );
 }

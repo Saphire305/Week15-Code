@@ -1,16 +1,10 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .App-header {
@@ -24,15 +18,29 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.house{
+  border: solid black 4px;
+  width: 80vw;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  width: 30vw;
+}
+
+.btnDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.createButton{
+  width: 80vw;
+}
+
+.titleDiv{
+  justify-content: center;
+}
+
+.trash{
+  width: 50px;
 }
